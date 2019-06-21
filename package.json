@@ -4,8 +4,11 @@
   "description": "Learning the MERN stack",
   "main": "index.js",
   "scripts": {
+    "client-install": "npm install --prefix client",
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": "https://github.com/williamdarkocode/learning-MERN-Stack.git",
   "author": "William Darko",
